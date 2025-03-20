@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Activity Limit Tracker</title>
+  <!-- Link to the main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>Daily Activity Limit Tracker</h1>
+
+    <!-- Activity Input Form -->
+    <form id="activity-form" class="activity-form">
+      <input
+        type="text"
+        id="activity-name"
+        placeholder="Activity Name"
+        required
+      />
+      <input
+        type="number"
+        id="activity-limit"
+        placeholder="Daily Limit (minutes)"
+        required
+      />
+      <button type="submit">Add Activity</button>
+    </form>
+
+    <!-- Container for the list of activities -->
+    <div id="activities-container" class="activities-container"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
